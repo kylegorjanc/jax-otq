@@ -5,10 +5,11 @@
 <ul class ="runners-list">
 	<% @runners.each do |runner| %>
 	<li>
-		<img src="<% runner.img_url %>" alt="">
-		<%= "#{runner.first_name} #{runner.last_name}" %>
+		<a href="./runners/<%= runner.id %>"><img src="<% runner.img_url %>" alt="">
+		<%= "#{runner.first_name} #{runner.last_name}" %></a>
 	</li>
 	<% end %>
 </ul>
+<a href="./runners/new"><button>Add Runner</button></a>
 
 <%  %>
