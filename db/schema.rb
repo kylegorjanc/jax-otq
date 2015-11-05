@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151105192125) do
+ActiveRecord::Schema.define(version: 20151105203839) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20151105192125) do
   create_table "runners", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
+    t.integer  "age"
     t.string   "profession"
     t.string   "website"
     t.boolean  "has_coach"
@@ -44,14 +45,13 @@ ActiveRecord::Schema.define(version: 20151105192125) do
     t.integer  "num_of_children"
     t.boolean  "is_qualified"
     t.string   "q_standard"
-    t.time     "marathon_pr"
-    t.time     "first_marathon_time"
+    t.string   "marathon_pr"
+    t.string   "first_marathon_time"
     t.integer  "avg_job_hrs"
     t.text     "bio"
     t.integer  "peak_mileage_wkly"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
-    t.integer  "age"
   end
 
   create_table "tags", force: :cascade do |t|

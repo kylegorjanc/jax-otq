@@ -3,6 +3,7 @@ class CreateRunners < ActiveRecord::Migration
     create_table :runners do |t|
       t.string :first_name
       t.string :last_name
+      t.integer :age
       t.string :profession
       t.string :website
       t.boolean :has_coach
@@ -13,8 +14,8 @@ class CreateRunners < ActiveRecord::Migration
       t.integer :num_of_children
       t.boolean :is_qualified
       t.string :q_standard
-      t.time :marathon_pr
-      t.time :first_marathon_time
+      t.string :marathon_pr
+      t.string :first_marathon_time
       t.integer :avg_job_hrs
       t.text :bio
       t.integer :peak_mileage_wkly
