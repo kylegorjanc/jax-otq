@@ -46,3 +46,4 @@ end
 gem 'less-rails-bootstrap'
 
 gem 'pry-rails'
+gem 'rails_12factor', group: :production
