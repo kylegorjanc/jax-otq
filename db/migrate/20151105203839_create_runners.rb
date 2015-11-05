@@ -19,6 +19,7 @@ class CreateRunners < ActiveRecord::Migration
       t.integer :avg_job_hrs
       t.text :bio
       t.integer :peak_mileage_wkly
+      t.string :img_url
 
       t.timestamps null: false
     end

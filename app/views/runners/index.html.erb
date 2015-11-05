@@ -2,11 +2,13 @@
 
 <p>This year at the <a href="http://www.1stplacesports.com/jm.html">Jacksonville Bank Half Marathon</a>, a group of runners who have qualified for the Olympic Trials Marathon with an "A" Standard (2:37:00 or better in a marathon) will be running this half marathon as a precursor to the Olympic Trials Marathon, and several of them have agreed to pace a group of hopefuls to a 1:15:00 or better to qualify for the "B" Standard.  An event like this is unprecedented in the US Marathon athletic field.</p>
 
-<ul class ="runners">
-	<% runners.each do |runner| %>
+<ul class ="runners-list">
+	<% @runners.each do |runner| %>
 	<li>
-		<% "#{runner.first_name} #{runner.last_name}" %>
+		<img src="<% runner.img_url %>" alt="">
+		<%= "#{runner.first_name} #{runner.last_name}" %>
 	</li>
 	<% end %>
 </ul>
 
+<%  %>

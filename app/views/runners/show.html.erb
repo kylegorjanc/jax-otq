@@ -1,0 +1,21 @@
+
+<div class="header">
+	<h1><%= "#{@runner.first_name} #{@runner.last_name}"%></h1>
+</div>
+
+<div class="main">
+	<img src="<%= @runner.img_url%>" alt= "<%= "#{@runner.first_name} #{@runner.last_name}" %>">
+	<a href="<%= @runner.twitter_handle %>"><button>Follow <%= @runner.first_name %> on Twitter</button></a>
+	<div class="profile">
+		Age: <%= @runner.age %><br>
+		
+
+	</div>
+
+	<div class="footer">
+		<a href="./<%= @runner.id %>/edit"><button>Edit</button></a>
+	</div>
+
+
+
+</div>
