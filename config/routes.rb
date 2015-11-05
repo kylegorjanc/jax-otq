@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'runners#index'
+
+  resources :runners, :users, :comments, :tags, :media
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
