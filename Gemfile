@@ -44,6 +44,6 @@ group :development do
 end
 
 gem 'less-rails-bootstrap'
-
+gem 'therubyracer'
 gem 'pry-rails'
 gem 'rails_12factor', group: :production
