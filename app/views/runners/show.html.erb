@@ -15,7 +15,7 @@
 		<% end %>
 </div>
 	<div class="profile">
-	<p><%= @runner.first_name %> is <%= @runner.age %> years old, and for the marathon, her personal record is <%= @marathon_pr %>.  She peaks at <%= @runner.peak_mileage_wkly %>miles per week.
+	<p><%= @runner.first_name %> is <%= @runner.age %> years old, and for the marathon, her personal record is <%= @runner.marathon_pr %>.  She peaks at <%= @runner.peak_mileage_wkly %>miles per week.
 		<% if @runner.has_coach %>
 		 She is coached by <%= @runner.coach_name %>. 
 		<% else %>

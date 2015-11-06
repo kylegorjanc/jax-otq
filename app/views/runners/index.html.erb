@@ -1,13 +1,33 @@
-<h1>The OTQ Project</h1>
+<div id="header" class="container">
+	<div id="logo">
+		<h1><a href="#">The OTQ Project</a></h1>
+		<p>This year at the <a href="http://www.1stplacesports.com/jm.html">Jacksonville Bank Half Marathon</a>, a group of runners who have qualified for the Olympic Trials Marathon with an "A" Standard (2:37:00 or better in a marathon) will be running this half marathon as a precursor to the Olympic Trials Marathon, and several of them have agreed to pace a group of hopefuls to a 1:15:00 or better to qualify for the "B" Standard.  An event like this is unprecedented in the US Marathon athletic field.</p>
+	</div>
+<div id="menu">
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="">Favorites</a></li>
+		<li><a href=""></a>Login</li>
+		<li><a href=""></a>Miles & Trials</li>
+		<li><a href=""></a>Salty Running</li>
+	</ul>
+</div> 
 
-<p>This year at the <a href="http://www.1stplacesports.com/jm.html">Jacksonville Bank Half Marathon</a>, a group of runners who have qualified for the Olympic Trials Marathon with an "A" Standard (2:37:00 or better in a marathon) will be running this half marathon as a precursor to the Olympic Trials Marathon, and several of them have agreed to pace a group of hopefuls to a 1:15:00 or better to qualify for the "B" Standard.  An event like this is unprecedented in the US Marathon athletic field.</p>
-
-<ul class ="runners-list">
-	<% @runners.each do |runner| %>
-	<li>
-		<a href="./runners/<%= runner.id %>"><img src="<% runner.img_url %>" alt="">
-		<%= "#{runner.first_name} #{runner.last_name}" %></a>
-	</li>
-	<% end %>
-</ul>
+<div class="container" id="page">
+<div id="banner">
+	<ul id="runners-list">
+		<% @runners.each do |runner| %>
+		<li class="box">
+			<a href="./runners/<%= runner.id %>"><img src="<%= runner.img_url%>" alt= "<%= "#{runner.first_name} #{runner.last_name}" %>">
+			<span><%= "#{runner.first_name} #{runner.last_name}" %></span></a>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<br>
 <a href="./runners/new"><button>Add Runner</button></a>
+</div>
+
+<div id="copyright" class="container">
+	<p>&copy; SaltyRunning. All rights reserved. | Media courtesy of <a href="http://milesandtrialsfilm.blogspot.com/">Miles & Trials</a> | Design by <a href="http://saltyrunning.com" rel="nofollow">Cinnamedia</a></p>
+</div>
