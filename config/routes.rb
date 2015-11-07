@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   root 'runners#index'
 
   resources :runners, :comments, :tags, :media
