@@ -1,47 +1,47 @@
 <%= form_for @runner do |f| %>
-  <%= f.label :first_name %><br>
+  <%= f.label :first_name %>  
   <%= f.text_field :first_name %><br><br>
-  <%= f.label :last_name %><br>
+  <%= f.label :last_name %>  
   <%= f.text_field :last_name %><br><br>
-  <%= f.label :twitter_handle %> <br>
+  <%= f.label :twitter_handle %>   
   <%= f.text_field :twitter_handle %><br><br>
-  <%= f.label :website %> <br>
+  <%= f.label :website %>  
   <%= f.text_field :website %><br><br>
-  <%= f.label :age %> <br>
+  <%= f.label :age %>  
   <%= f.number_field :age %><br>
   <br><br>
-  <%= f.label :img_url %> <br>
+  <%= f.label :img_url %>  
   <%= f.text_field :img_url %><br><br>
 
   <h4>Running Career</h4>
-  <%= f.label :is_qualified %><br>
+  <%= f.label :is_qualified %> 
   <%= f.check_box :is_qualified %>
   <br><br>
-  <%= f.label :q_standard %> <br>
+  <%= f.label :q_standard %> 
   <%= f.text_field :q_standard %><br><br>
-  <%= f.label :marathon_pr %> <br>
+  <%= f.label :marathon_pr %>
   <%= f.text_field :marathon_pr %><br><br>
-  <%= f.label :first_marathon_time %> <br>
+  <%= f.label :first_marathon_time %>
   <%= f.text_field :first_marathon_time %><br><br>
-  <%= f.label :has_coach %> <br>
+  <%= f.label :has_coach %>  
   <%= f.check_box :has_coach %><br><br>
-  <%= f.label :coach_name %> <br>
+  <%= f.label :coach_name %> 
   <%= f.text_field :coach_name %><br><br>
-  <%= f.label :peak_mileage_wkly %> <br>
+  <%= f.label :peak_mileage_wkly %>
   <%= f.number_field :peak_mileage_wkly %><br><br>
   
   <h4>Personal Life</h4>
-  <%= f.label :profession %> <br>
+  <%= f.label :profession %> 
   <%= f.text_field :profession %><br><br>
-  <%= f.label :avg_job_hrs %> <br>
+  <%= f.label :avg_job_hrs %>
   <%= f.text_field :avg_job_hrs %><br><br>
-  <%= f.label :has_spouse %> <br>
+  <%= f.label :has_spouse %> 
   <%= f.check_box :has_spouse %><br><br>
-  <%= f.label :has_children %> <br>
+  <%= f.label :has_children %>
   <%= f.check_box :has_children %><br><br>
-  <%= f.label :num_of_children %> <br>
+  <%= f.label :num_of_children %> 
   <%= f.number_field :num_of_children %><br><br>
-  <%= f.label :bio %> <br>
+  <%= f.label :bio %>
   <%= f.text_area :bio %><br><br>
   <%= f.submit %>
  <% end %>

@@ -34,7 +34,7 @@ class RunnersController < ApplicationController
   def destroy
     @runner = Runner.find(params[:id])
     @runner.destroy
-    redirect_to @runners
+    redirect_to '/runners'
   end
 
   private

@@ -1,54 +1,55 @@
-
-<div class="header">
-	<h1><%= "#{@runner.first_name} #{@runner.last_name}"%></h1>
-</div>
-
-<div class="main">
-	<img src="<%= @runner.img_url%>" alt= "<%= "#{@runner.first_name} #{@runner.last_name}" %>">
-		<% if @runner.is_qualified %>
-		 <p>
-		 	Qualified with a <%= @runner.q_standard %> standard!
-		 </p>
-		<% else %>
-			<p>Seeking qualification.</p>
-		<% end %>
-</div>
-	<div class="profile">
-	<p><%= @runner.first_name %> is <%= @runner.age %> years old, and for the marathon, her personal record is <%= @runner.marathon_pr %>.  She peaks at <%= @runner.peak_mileage_wkly %>miles per week.
-		<% if @runner.has_coach %>
-		 She is coached by <%= @runner.coach_name %>. 
-		<% else %>
-			She is self coached. 
-		<% end %>
-	</p>
-
-	<p>She is a <%= @runner.profession %>, and on average she works at this about <%= @runner.avg_job_hrs %> per week. 
-		<% if @runner.has_spouse %>
-		 She has a spouse 
-		<% else %>
-			She is single  
-		<% end %>
-        and has 
-		<% if @runner.has_children %>
-		 <%= @runner.num_of_children %>. 
-		<% else %>
-		no 
-		<% end %>
-		kids.
-		</p>
-
-
-		
-
+<div class="container" id="page">
+	<div class="header">
+		<h1><%= "#{@runner.first_name} #{@runner.last_name}"%></h1>
 	</div>
 
-	<div class="footer">
-	<a href="<%= @runner.twitter_handle %>"><button>Follow <%= @runner.first_name %> on Twitter</button></a>
-	<a href="<%= @runner.twitter_handle %>"><button>Visit <%= @runner.first_name %>'s Website</button></a>
+	<div class="main" id="runner-info">
+		<img id="profile-pic"src="<%= @runner.img_url%>" alt= "<%= "#{@runner.first_name} #{@runner.last_name}" %>">
+		<div class="bio">
+			<h3><% if @runner.is_qualified %>
+			 	Qualified with a <%= @runner.q_standard %> standard!
+			<% else %>
+				Seeking qualification.
+			<% end %></h3>
+		<p><%= @runner.first_name %> is <%= @runner.age %> years old, and for the marathon, her personal record is <%= @runner.marathon_pr %>.  She peaks at <%= @runner.peak_mileage_wkly %>miles per week.  
+			<% if @runner.has_coach %>
+			 She is coached by <%= @runner.coach_name %>. 
+			<% else %>
+				She is self coached. 
+			<% end %>
+		She is a <%= @runner.profession %>, and on average she works at this about <%= @runner.avg_job_hrs %> per week. 
+			<% if @runner.has_spouse %>
+			 She has a spouse 
+			<% else %>
+ 			She is single  
+			<% end %>
+	        and has 
+	        <% if @runner.num_of_children === 1 %>
+				<%= @runner.num_of_children %> child.
+			<% elsif @runner.num_of_children > 1 %>
+			 <%= @runner.num_of_children %> kids.
+			<% else %>
+				no kids.
+			<% end %>
+			</p>
+
+
+			
+
+		</div>
+
+		<div class="footer">
+		<a href="<%= @runner.twitter_handle %>"><button>Follow <%= @runner.first_name %> on Twitter</button></a>
+		<a href="<%= @runner.twitter_handle %>"><button>Visit <%= @runner.first_name %>'s Website</button></a><br>
+		<div id="admin-tools">
+		<%# if @user.user_type=nil %>
 		<a href="./<%= @runner.id %>/edit"><button>Edit</button></a>
+		</div>
+		<%# else %>
+		If any of this information is in error, please <%= link_to "contact site administrators", root_path %>.
+		<%# end %>
+		</div>
 
 	</div>
-
-
 
 </div>
