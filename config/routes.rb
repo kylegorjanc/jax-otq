@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
-  root 'runners#index'
+  root 'welcome#index'
 
   resources :runners, :comments, :tags, :media
   # resources :users, except: [:destroy, :edit, :update, :show]
