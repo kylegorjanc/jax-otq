@@ -26,10 +26,10 @@
 	        and has 
 	        <% if @runner.num_of_children === 1 %>
 				<%= @runner.num_of_children %> child.
-			<% elsif @runner.num_of_children > 1 %>
-			 <%= @runner.num_of_children %> kids.
+			<% elsif @runner.num_of_children === 0 || nil %>
+			 	no children.
 			<% else %>
-				no kids.
+			<%= @runner.num_of_children %> kids.
 			<% end %>
 			</p>
 
@@ -38,9 +38,12 @@
 
 		</div>
 
-		<div class="runner-footer">
-		<a href="<%= @runner.twitter_handle %>"><button>Follow <%= @runner.first_name %> on Twitter</button></a>
-		<a href="<%= @runner.twitter_handle %>"><button>Visit <%= @runner.first_name %>'s Website</button></a><br>
+		<div class="footer">
+		<a href="<%= @runner.twitter_handle %>"><button><%= @runner.first_name %> on Twitter</button></a>
+		<a href="<%= @runner.twitter_handle %>"><button>Visit <%= @runner.first_name %>'s Website</button></a>
+		<a href="<%= @runners %>"><button>Back to Athletes</button></a><br>
+
+
 		<div id="admin-tools">
 		<%# if @user.user_type=nil %>
 		<a href="./<%= @runner.id %>/edit"><button>Edit</button></a>
@@ -51,5 +54,4 @@
 		</div>
 
 	</div>
-
 </div>

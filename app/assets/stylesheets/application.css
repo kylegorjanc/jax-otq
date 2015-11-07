@@ -157,7 +157,7 @@ a:hover {
 button {
 	display: inline-block;
 	margin-top: 2em;
-	padding: 1em 2em 1em 2em;
+	padding: .6em 1.2em .6em 1.2em;
 	background: #8dc63f;
 	letter-spacing: 0.20em;
 	text-decoration: none;
@@ -171,11 +171,15 @@ button.delete {
 	background-color: red;
 }
 
-button.delete > a {
+button > a {
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1em;
 	color: #ffffff;
+}
+
+button.delete > a {
+	font-size: 1.5em;
 }
 
 
@@ -189,7 +193,7 @@ button.delete > a {
 }
 #copyright {
 	overflow: hidden;
-	padding: 5em 0em;
+	margin: 5em 0em;
 	border-top: 1px solid rgba(0,0,0,0.1);
 }
 
@@ -263,7 +267,7 @@ Runners View
 	height: 270px;
 	text-align: center;
 	margin-bottom: 2em;
-	border-bottom: 1px solid rgba(0,0,0 .1);
+	border-bottom: 0px solid rgba(0,0,0 .1);
 	font-weight: 600;
 	font-size: 1.6em;
 	margin: 20px;

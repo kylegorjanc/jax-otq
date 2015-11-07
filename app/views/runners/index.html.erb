@@ -1,18 +1,19 @@
 <div class="container" id="page">
 
-<div id="runners-list">
-	<h2 class="categories">The Athletes</h2>
-	<ul id="">
-		<% @runners.each do |runner| %>
-		<li>
-			<div class = "box">
-			<a href="./runners/<%= runner.id %>"><img id="runnerpic" src="<%= runner.img_url%>" alt= "<%= "#{runner.first_name} #{runner.last_name}" %>">
-			<span><%= "#{runner.first_name} #{runner.last_name}" %></span></a>
-			</div>
-		</li>
-		<% end %>
-	</ul>
-</div>
-<br>
-<a href="./runners/new"><button>Add Runner</button></a>
+	<div id="runners-list">
+		<h2 class="categories">The Athletes</h2>
+		<ul id="">
+			<% @runners.each do |runner| %>
+			<li>
+				<div class = "box">
+				<a href="./runners/<%= runner.id %>"><img id="runnerpic" src="<%= runner.img_url%>" alt= "<%= "#{runner.first_name} #{runner.last_name}" %>">
+				<span><%= "#{runner.first_name} #{runner.last_name}" %></span></a>
+				</div>
+			</li>
+			<% end %>
+		</ul>
+		<div><button><%= link_to "Add Runner", new_runner_path  %></button></div>
+	</div>
+	<br>
+
 </div>
