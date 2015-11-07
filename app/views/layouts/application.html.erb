@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>OTQ</title>
+  <title>The OTQ Project</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div id="navbar">
+	<ul>
+		<li><%= link_to "Home", root_path %></li>
+		<li><a href="">Favorites</a></li>
+		<li><%= link_to "Login", log_in_path %></li>
+		<li><%= link_to "Miles & Trials", "http://milesandtrialsfilm.blogspot.com/" %></li>
+		<li><%= link_to "Salty Running", "http://www.saltyrunning.com/" %></li>
+	</ul>
+</div> 
+<div id="header" class="container">
+	<div id="logo">
+		<h1 class="logo"><a href="#">The OTQ Project</a></h1>
+		</div>
+	</div>
 <%= yield %>
+
+<div class="footer">
+	<div id="copyright" class="container">
+		<p>&copy; SaltyRunning. All rights reserved. | Media courtesy of <a href="http://milesandtrialsfilm.blogspot.com/">Miles & Trials</a> | Design by <a href="http://saltyrunning.com" rel="nofollow">Cinnamedia</a></p>
+	</div>
+
+</div>
 
 </body>
 </html>

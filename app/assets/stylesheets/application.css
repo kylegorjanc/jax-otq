@@ -1,446 +1,238 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/*************
+Runners View
+*************/
 
-/* *= require twitter/bootstrap*/
+#runners-list {
+	position: relative;
+	display: inline;
+	overflow: hidden;
+	padding: 15em 0em;
+	background-size: cover;
+	border-top: 1px solid rgba(0,0,0,0.08);
+}
+#runners-list > ul >li {
+	display: inline-block;
+}
 
- 	html, body
-	{
-		height: 100%;
-	}
-	
-	body
-	{
-		margin: 0px;
-		padding: 0px;
-		background: #FFF;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 12pt;
-		font-weight: 300;
-		color: #000000;
-	}
-	
-	
-	h1, h2, h3
-	{
-		margin: 0;
-		padding: 0;
-		color: #8dc63f;
-	}
-	
-	p, ol, ul
-	{
-		margin-top: 0;
-	}
-	
-	ol, ul
-	{
-		padding: 0;
-		list-style: none;
-	}
-	
-	p
-	{
-		line-height: 180%;
-	}
-	
-	strong
-	{
-		color: #8dc63f;
-	}
-	
-	a
-	{
-		color: #8dc63f;
-	}
-	
-	a:hover
-	{
-		text-decoration: none;
-	}
-	
-	.container
-	{
-		overflow: hidden;
-		margin: 0em auto;
-		width: 1200px;
-	}
-	
-/*********************************************************************************/
-/* Image Style                                                                   */
-/*********************************************************************************/
+.box
+{
+	position: relative;
+	width: 250px;
+	height: 270px;
+	text-align: center;
+	margin-bottom: 2em;
+	border-bottom: 1px solid rgba(0,0,0 .1);
+	font-weight: 600;
+	font-size: 1.6em;
+	margin: 20px;
+}
 
-	.image
-	{
-		display: inline-block;
-	}
-	
-	.image img
-	{
-		display: block;
-		width: 100%;
-	}
-	
-	.image-full
-	{
-		display: block;
-		width: 100%;
-		margin: 0;
-	}
-	
-	.image-left
-	{
-		float: left;
-		margin: 0 2em 2em 0;
-	}
-	
-	.image-centered
-	{
-		display: block;
-		margin: 0 0 2em 0;
-	}
-	
-	.image-centered img
-	{
-		margin: 0 auto;
-		width: auto;
-	}
+.box span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 1em 1em;
+	background: rgba(141, 198, 63, 0.8);
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: .6em;
+	color: #ffffff;
+	width: 86% !important;
+	z-index: 1;
+}
 
-/*********************************************************************************/
-/* List Styles                                                                   */
-/*********************************************************************************/
+#runnerpic {
+	position: static;
+	width: 100% !important;	
+	height: 100% !important;
+	z-index: -1;
+}
 
-	ul.style1
-	{
-	}
+#about {
+	width: 80%;
+	text-align: justify;
+	margin-top: 2em;
+	padding: 2em;
+}
 
 
-/*********************************************************************************/
-/* Social Icon Styles                                                            */
-/*********************************************************************************/
+/***********/
+/* Navbar                                                                          */
+/***********/
 
-	ul.contact
-	{
-		margin: 0;
-		padding: 2em 0em 0em 0em;
-		list-style: none;
-	}
-	
-	ul.contact li
-	{
-		display: inline-block;
-		padding: 0em 0.30em;
-		font-size: 1em;
-	}
-	
-	ul.contact li span
-	{
-		display: none;
-		margin: 0;
-		padding: 0;
-	}
-	
-	ul.contact li a
-	{
-		color: #FFF;
-	}
-	
-	ul.contact li a:before
-	{
-		display: inline-block;
-		background: #3f3f3f;
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		border-radius: 20px;
-		text-align: center;
-		color: #FFFFFF;
-	}
-	
-	ul.contact li a.icon-twitter:before { background: #2DAAE4; }
-	ul.contact li a.icon-facebook:before { background: #39599F; }
-	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
-	ul.contact li a.icon-tumblr:before { background: #31516A; }
-	ul.contact li a.icon-rss:before { background: #F2600B; }
+#navbar {
+	position: absolute;
+	background-color: rgba(0,0,0,0.1);
+	top: 0;
+	right: 0;
+	width: 100%;
+	padding: .2em;
+}
 
-/*********************************************************************************/
-/* Button Style                                                                  */
-/*********************************************************************************/
+#navbar ul {
+	float: right;
+	margin: 0 auto;
+	margin-right: 2em;
+	display: inline-block;
+}
 
-	.button
-	{
-		display: inline-block;
-		margin-top: 2em;
-		padding: 1em 2em 1em 2em;
-		background: #8dc63f;
-		letter-spacing: 0.20em;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-weight: 400;
-		font-size: 0.90em;
-		color: #FFF;
-	}
-	
-	.button:before
-	{
-	}
-		
-/*********************************************************************************/
-/* 3-column                                                                      */
-/*********************************************************************************/
+#navbar li {
+	display: block;
+	float: left;
+	text-align: center;
+	text-transform: uppercase;
+}
 
-	.box
-	{
-		width: 384px;
-		text-align: center;
-		margin-bottom: 1em;
-		font-weight: 600;
-		font-size: 1.6em;
-	}
+#navbar li:before {
+	content: "//";
+	padding: 1em 1em;
+	font-weight: 700;
+	color: rgba(0,0,0,.6);
+}
 
-	.box p
-	{
-		padding: 0em 1.5em;
-	}
+#navbar li a {
 
-	.box {
-		float: left;
-		margin-right: 20px;
-	}
+	color: #fb8a03;
+}
+
+#navbar li:hover a, #navbar li.active a {
+	color: rgba(0,0,0,.6);
+}
+
+#navbar .current_page_item a {
+	color: rgba(0,0,0,.8);
+}
+
+/***********/
+/* Header                                                                          */
+/***********/
+
+#header {
+	position: relative;
+	padding: 1em 0em;
+}
+
+#logo {
+	position: absolute;
+	top: -0.5em;
+	left: 0;
+	font-size: 2em;
+}
+
+#logo a {
+	color: #8dc63f;
+	text-decoration: none;
+}
+
+/*************/
+/* Body
+/*************/
+
+body {
+width: 100%;
+margin: 0px;
+padding: 2em;
+background: #ffffff;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 14pt;
+font-weight: 300;
+color: #000000;
+}
 
 
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	color: #8dc63f;
+}
 
-	#header
-	{
-		position: relative;
-		padding: 5em 0em;
-	}
+h1 {
+	text-decoration: none;
+}
 
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
+h2 {
+	font-size: 3em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
 
-	#logo
-	{
-		position: absolute;
-		top: 4em;
-		left: 0;
-	}
-	
-	#logo h1
-	{
-	}
-	
-	#logo a
-	{
-		text-decoration: none;
-		color: #8dc63f;
-	}
+h2.categories {
+	text-align: center;
+}
 
-/*********************************************************************************/
-/* Menu                                                                          */
-/*********************************************************************************/
+p, ol, ul {
+	margin-top: 0;
+	display: inline;
 
-	#menu
-	{
-		position: absolute;
-		top: 5em;
-		right: 0;
-	}
-	
-	#menu ul
-	{
-		display: inline-block;
-	}
-	
-	#menu li
-	{
-		display: block;
-		float: left;
-		text-align: center;
-	}
-	
-		#menu li:before
-		{
-			content: "//";
-			padding: 1em 1.5em;
-			font-weight: 700;
-			color: rgba(0,0,0,.6);
-		}
-	
-	#menu li a, #menu li span
-	{
-		text-decoration: none;
-		text-transform: uppercase;
-		font-weight: 600;
-		font-size: 1em;
-		color: rgba(0,0,0,.4);
-	}
-	
-	#menu li:hover a, #menu li.active a, #menu li.active span
-	{
-		color: rgba(0,0,0,.6);
-	}
-	
-	#menu .current_page_item a
-	{
-		color: rgba(0,0,0,.8);
-	}
-	
-	#menu .icon
-	{
-	}
-
-/*********************************************************************************/
-/* Banner                                                                        */
-/*********************************************************************************/
-
-	#banner
-	{
-		overflow: hidden;
-		padding: 15em 0em;
-		background: url(images/banner.jpg) no-repeat center;
-		background-size: cover;
-		border-top: 1px solid rgba(0,0,0,0.08);
-	}
-
-/*********************************************************************************/
-/* Page                                                                          */
-/*********************************************************************************/
-
-	#page
-	{
-		position: relative;
-		overflow: hidden;
-		padding: 8em 0em;
-		display: inline;
-	}
-
-	#banner > .runners-list {
-		display: inline;
-	}
-
-/*********************************************************************************/
-/* Content                                                                       */
-/*********************************************************************************/
-
-	#content
-	{
-	}
-
-/*********************************************************************************/
-/* Sidebar                                                                       */
-/*********************************************************************************/
-
-	#sidebar
-	{
-	}
-
-/*********************************************************************************/
-/* Footer                                                                        */
-/*********************************************************************************/
-
-	#footer
-	{
-	}
-
-/*********************************************************************************/
-/* Copyright                                                                     */
-/*********************************************************************************/
-
-	#copyright
-	{
-		overflow: hidden;
-		padding: 5em 0em;
-		border-top: 1px solid rgba(0,0,0,0.1);
-	}
-	
-	#copyright p
-	{
-		letter-spacing: 0.20em;
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 0.80em;
-		color: rgba(0,0,0,0.6);
-	}
-	
-	#copyright a
-	{
-		text-decoration: none;
-		color: rgba(0,0,0,1);
-	}
-
-/*********************************************************************************/
-/* Featured                                                                      */
-/*********************************************************************************/
-
-	#featured
-	{
-		overflow: hidden;
-		padding: 5em 0em;
-		border-top: 1px solid rgba(0,0,0,0.1);
-	}
-	
-	#featured .align-left
-	{
-		float: left;
-		width: 384px;
-		padding-top: 1em;
-		text-align: center;
-	}
-	
-	#featured .fa
-	{
-		font-size: 14em;
-		color: #8dc63f;
-	}
-
-	#featured .align-right
-	{
-		float: right;
-		width: 792px;
-		font-size: 1.4em;
-	}
+}
 
 
-	.box
-	{
-		margin-bottom: 2em;
-		padding-bottom: 2em;
-		border-bottom: 1px solid rgba(0,0,0,.1);
-	}
-	
-	.box span
-	{
-		margin: -20px, 0, 0, 0;
-		padding: 1em 1em;
-		background: #8dc63f;
-		display: inline-block;
-		line-height: 20px;
-		text-align: center;
-		text-transform: uppercase;
-		font-weight: 600;
-		font-size: .8em;
-		color: #FFF;
-		width: 300px;
-	}
+p {
+	line-height: 120%;
+	text-align: justify;
+}
 
-	.box > img {
-		width: 300px;
-		height: 300px;
-	}
+strong {
+	color: #8dc63f;
+}
+
+a
+{
+	color: #8dc63f;
+}
+
+a:hover {
+	color: #32CD32;
+}
+
+#page {
+	position: relative;
+	width: 80%;
+	left: auto;
+	right: auto;
+	overflow: hidden;
+	padding: 8em 0em;
+	display: inline;
+}
+
+button {
+	display: inline-block;
+	margin-top: 2em;
+	padding: 1em 2em 1em 2em;
+	background: #8dc63f;
+	letter-spacing: 0.20em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.90em;
+	color: #ffffff;
+}
+
+
+
+
+
+/**********/
+/* Footer                                                                     */
+/**********/
+#copyright {
+	overflow: hidden;
+	padding: 5em 0em;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+#copyright p {
+	letter-spacing: 0.20em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	color: rgba(0,0,0,0.6);
+}
+
+#copyright a {
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+}

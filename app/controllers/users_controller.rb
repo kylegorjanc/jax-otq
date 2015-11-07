@@ -13,7 +13,7 @@ class UsersController < ApplicationController
    User.create(user_params)
     if @user.save
       session[:current_user_id] = @user.id
-      redirect_to log_in_path
+      redirect_to profile_path
     else
       redirect_to new_user_path
     end
@@ -38,7 +38,7 @@ class UsersController < ApplicationController
 
 # log_in GET    /users/log_in(.:format)       users#log_in
 	def log_in
-
+      
 	end
 
 

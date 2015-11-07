@@ -6,7 +6,12 @@ module SessionsHelper
 
   def current_user
   	if session[:user_id]
-  		@current_user = User.find(session[:user_id])
+  		@user = user.find(session[:user_id])
+  		redirect_to profile_path
   	end
   end
 end
+
+ def logged_in
+   !current_user.nil?
+ end

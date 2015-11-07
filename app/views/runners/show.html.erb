@@ -5,7 +5,6 @@
 
 <div class="main">
 	<img src="<%= @runner.img_url%>" alt= "<%= "#{@runner.first_name} #{@runner.last_name}" %>">
-	<a href="<%= @runner.twitter_handle %>"><button>Follow <%= @runner.first_name %> on Twitter</button></a>
 		<% if @runner.is_qualified %>
 		 <p>
 		 	Qualified with a <%= @runner.q_standard %> standard!
@@ -27,20 +26,16 @@
 		<% if @runner.has_spouse %>
 		 She has a spouse 
 		<% else %>
-			She is single 
+			She is single  
 		<% end %>
-        and has
+        and has 
 		<% if @runner.has_children %>
 		 <%= @runner.num_of_children %>. 
 		<% else %>
-		no
+		no 
 		<% end %>
 		kids.
-
 		</p>
-	
-		Age: <br>
-		Marathon PR: 
 
 
 		
@@ -48,7 +43,10 @@
 	</div>
 
 	<div class="footer">
+	<a href="<%= @runner.twitter_handle %>"><button>Follow <%= @runner.first_name %> on Twitter</button></a>
+	<a href="<%= @runner.twitter_handle %>"><button>Visit <%= @runner.first_name %>'s Website</button></a>
 		<a href="./<%= @runner.id %>/edit"><button>Edit</button></a>
+
 	</div>
 
 
