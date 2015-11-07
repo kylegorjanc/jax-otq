@@ -248,6 +248,7 @@ Runners View
 	padding: 15em 0em;
 	background-size: cover;
 	border-top: 1px solid rgba(0,0,0,0.08);
+	margin: 0 auto;
 }
 
 /* runners index only */

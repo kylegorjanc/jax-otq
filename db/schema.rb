@@ -11,18 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151106195508) do
+ActiveRecord::Schema.define(version: 20151107212251) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "comments", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "article_id"
-    t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "media", force: :cascade do |t|
     t.string   "media_type"
@@ -63,15 +55,10 @@ ActiveRecord::Schema.define(version: 20151106195508) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "user_type"
-    t.integer  "session_id"
     t.string   "username"
     t.string   "password_digest"
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
-    t.string   "password_confirmation_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end
