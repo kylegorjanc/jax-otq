@@ -10,5 +10,5 @@ class ApplicationController < ActionController::Base
   # def authenticate
   #   redirect_to new_user_path unless session[:current_user_id]
   # end
-  include SessionsHelper
+
 end
