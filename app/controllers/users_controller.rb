@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  #I definitely created Users with scaffolding - I know we weren't supposed to, but I dug myself into a serious hole trying to do it on my own and it broke my app.  So I destroyed my controllers and models and started working with the tutorial at https://www.railstutorial.org/book/toy_app#sec-demo_users_resource , which I have found to be extraordinarily helpful.  I am modifying my views to meet my needs.
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
