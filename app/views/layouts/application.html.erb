@@ -11,7 +11,7 @@
 	<ul>
 		<li><%= link_to "Home", root_path %></li>
 		<li><a href="">Favorites</a></li>
-		<li><%= link_to "Login", log_in_path %></li>
+		<li><%= link_to "Login", "#" %></li>
 		<li><%= link_to "Miles & Trials", "http://milesandtrialsfilm.blogspot.com/" %></li>
 		<li><%= link_to "Salty Running", "http://www.saltyrunning.com/" %></li>
 	</ul>
@@ -21,7 +21,9 @@
 		<h1 class="logo"><a href="#">The OTQ Project</a></h1>
 		</div>
 	</div>
-<%= yield %>
+	<div class="container" id="page">
+		<%= yield %>
+	</div>
 
 <div class="footer">
 	<div id="copyright" class="container">
