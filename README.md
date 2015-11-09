@@ -14,5 +14,5 @@ I was unfortunately not able to achieve full user functionality, having spent mo
 While working on the comment system, I learned a great deal of the information I missed about testing and managed to implement it pretty well.  I also was very confused about the lesson on static pages before I figured them out with this project.  I'm very pleased with the result, but at the same time I wish that I had more app functionality.
 
 ###resources: 
--https://www.youtube.com/watch?v=X3VZ6OgQmwM&feature=youtu.be - on the advice of a classmate I followed this as my first attempt at user logins, but it led me down a path of many error messages. Thinking it was my own error, I began it again from scratch, only to have the same problems.
--https://www.railstutorial.org/book/  - was crucial in helping me learn about testing and helping me make it to user login functionality.
+* https://www.youtube.com/watch?v=X3VZ6OgQmwM&feature=youtu.be - on the advice of a classmate I followed this as my first attempt at user logins, but it led me down a path of many error messages. Thinking it was my own error, I began it again from scratch, only to have the same problems.
+* https://www.railstutorial.org/book/  - was crucial in helping me learn about testing and helping me make it to user login functionality.
