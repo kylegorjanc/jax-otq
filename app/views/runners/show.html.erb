@@ -45,11 +45,11 @@
 
 
 		<div id="admin-tools">
-		<%# if @user.user_type=nil %>
+		<%# if @user.user_type=admin %>
 		<a href="./<%= @runner.id %>/edit"><button>Edit</button></a>
 		</div>
-		<%# else %>
-		If any of this information is in error, please <%= link_to "contact site administrators", root_path %>.
+		<%# else %><br><br>
+		If any of this information is in error, please <%= link_to "contact site administrators", "/static_pages/contact" %>.
 		<%# end %>
 		</div>
 

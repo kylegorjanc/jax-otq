@@ -12,7 +12,12 @@
 			</li>
 			<% end %>
 		</ul>
-		<div><button><%= link_to "Add Runner", new_runner_path  %></button></div>
+		<div>
+		<button><%= link_to "Add Runner", new_runner_path  %></button>
+		<br><br>
+		<p>If any of this information is in error, please <%= link_to "contact site administrators", "/static_pages/contact" %>.</p>
+		</div>
+
 	</div>
 	<br>
 

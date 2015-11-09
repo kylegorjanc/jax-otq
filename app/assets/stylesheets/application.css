@@ -116,8 +116,10 @@ p, ol, ul {
 
 
 p {
+	position: relative;
 	line-height: 140%;
 	text-align: justify;
+	padding-right: 2em;
 }
 
 strong {
@@ -150,7 +152,7 @@ a:hover {
 	left: auto;
 	right: auto;
 	overflow: hidden;
-	padding: 8em 0em;
+	padding: 8em 2em;
 	display: inline;
 }
 
