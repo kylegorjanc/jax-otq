@@ -1,8 +1,13 @@
 
-	<h3>Edit Runner Info</h3>
+	<h3 class="form">Edit Runner Info</h3>
+<% if logged_in? %>
 	<%= render partial: 'form' %>
 	<br>
 	<div class="form">	
 	<h3 class="warning" id="delete">WARNING: DELETING A RUNNER CANNOT BE UNDONE.</h2>
 	<button class="delete"><%= link_to "DELETE #{@runner.first_name} #{@runner.last_name}", runner_path(@runner), method: :delete, data: {confirm: "Are you sure you want to delete #{@runner.first_name} #{@runner.last_name}?"} %></button>
 	</div>
+<% else %>
+	<h2 id="error_explanation">You must be logged in to do that!</h2>
+
+<% end %>

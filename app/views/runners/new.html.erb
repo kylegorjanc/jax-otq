@@ -1,3 +1,7 @@
-
-	<h3>Add Runner Info</h3>
+	<h3 class="form">Add Runner Info</h3>
+<% if logged_in? %>
 	<%= render partial: 'form'%>
+<% else %>
+	<h2 id="error_explanation">You must be logged in to do that!</h2>
+
+<% end %>

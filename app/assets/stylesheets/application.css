@@ -228,7 +228,7 @@ button.delete > a {
 	color: rgba(0,0,0,1);
 }
 
-#error_explanation h2{
+#error_explanation {
 	color: #fb8a03;
 	font-size: 1.5em;
 }

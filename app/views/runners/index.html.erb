@@ -13,7 +13,9 @@
 			<% end %>
 		</ul>
 		<div>
+		<% if logged_in? %>
 		<button><%= link_to "Add Runner", new_runner_path  %></button>
+		<% end %>
 		<br><br>
 		<p>If any of this information is in error, please <%= link_to contact_path %>.</p>
 		</div>
