@@ -29,6 +29,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+         log_in @user
         format.html { redirect_to root_path }
         format.json { render :show, status: :created, location: @user }
         flash[:success] = "Sign-up successful. Please log in."
