@@ -20,7 +20,7 @@ Because the information about the subject matter (the runners) was the most impo
 * Planning was an amazing process this time around. I feel like I began coding with clear direction and a goal in mind, but could begin at the beginning, so to speak.
 
 ###resources: 
-* Trello was a great planning resource for me.  In particular I like the checklists that you can add to each card.  **My user stories are located [here](https://trello.com/b/m5LgIXoA/otq).** They are organized by type via cards on a list of user types, and the stories are checklist items.  One thing I had trouble with was populating a backlog.  I ti
+* Trello was a great planning resource for me.  In particular I like the checklists that you can add to each card.  **My user stories are located [here](https://trello.com/b/m5LgIXoA/otq).** They are organized by type via cards on a list of user types, and the stories are checklist items.  One thing I had trouble with was populating a backlog.  I tried to keep up with myself, but once I'd get into coding, everything just flowed, so updating boards and lists fell by the wayside.
 * [Diagramming](https://trello.com/c/4unPOWy2) by hand
 * Sketching a [wire frame](https://trello.com/c/7RlhTs1h) - The rest of the design flowed pretty naturally from this, particularly since each page was embedded in the same layout.
 * https://www.youtube.com/watch?v=X3VZ6OgQmwM&feature=youtu.be - on the advice of a classmate I followed this as my first attempt at user logins, but it led me down a path of many error messages. Thinking it was my own error, I began it again from scratch, only to have the same problems.
