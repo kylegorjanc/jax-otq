@@ -14,9 +14,13 @@ Because the information about the subject matter (the runners) was the most impo
 I was unfortunately not able to achieve full user functionality, having spent more than two full days on it.  I felt this was the most important part of the project, so continued to work at it.
 
 ## unexpected gains
-While working on the comment system, I learned a great deal of the information I missed about testing and managed to implement it pretty well.  I also was very confused about the lesson on static pages before I figured them out with this project.  I'm very pleased with the result, but at the same time I wish that I had more app functionality.
+* While working on the comment system, I learned a great deal of the information I missed about testing and managed to implement it pretty well.  I also was very confused about the lesson on static pages before I figured them out with this project.  I'm very pleased with the result, but at the same time I wish that I had more app functionality.
+* Planning was an amazing process this time around. I feel like I began coding with clear direction and a goal in mind, but could begin at the beginning, so to speak.
 
 ###resources: 
-* [Trello](https://trello.com/b/m5LgIXoA/otq) was a great planning resource for me.  In particular I like the checklists that you can add to each card.  **My user stories are located here.** They are organized by type via cards on a list of user types, and the stories are checklist items.
+* Trello was a great planning resource for me.  In particular I like the checklists that you can add to each card.  **My user stories are located [here](https://trello.com/b/m5LgIXoA/otq).** They are organized by type via cards on a list of user types, and the stories are checklist items.  One thing I had trouble with was populating a backlog.  I ti
+* [Diagramming](https://trello.com/c/4unPOWy2) by hand
+* Sketching a [wire frame](https://trello.com/c/7RlhTs1h) - The rest of the design flowed pretty naturally from this, particularly since each page was embedded in the same layout.
 * https://www.youtube.com/watch?v=X3VZ6OgQmwM&feature=youtu.be - on the advice of a classmate I followed this as my first attempt at user logins, but it led me down a path of many error messages. Thinking it was my own error, I began it again from scratch, only to have the same problems.
 * https://www.railstutorial.org/book/  - was crucial in helping me learn about testing and helping me make it to user login functionality.
+* http://guides.rubyonrails.org/ - The rails guides were great when I was trying to figure out forms, combat weird error messages, populate data and about a thousand other things.
