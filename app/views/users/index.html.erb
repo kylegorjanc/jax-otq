@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Users</h1>
-
+<h1>All Users</h1>
+<% if logged_in? %>
 <table>
   <thead>
     <tr>
@@ -25,5 +25,8 @@
 </table>
 
 <br>
+<% else %>
+  <h2 id="error_explanation">You must be logged in to do that!</h2>
 
+<% end %>
 <button><%= link_to 'New User', new_user_path %></button>
