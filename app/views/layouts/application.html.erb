@@ -14,7 +14,6 @@
 		<li><%= link_to "Salty Running", "http://www.saltyrunning.com/" %></li>
 		<% if logged_in? %>
               <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", '#' %></li>
               <li>
                 <%= link_to "Log out", logout_path, method: "delete" %></li>
             <% else %>
