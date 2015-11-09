@@ -11,10 +11,12 @@ Because the information about the subject matter (the runners) was the most impo
 
 ## unsolved problems
 
-I was unfortunately not able to achieve full user functionality, having spent more than two full days on it.  I felt this was the most important part of the project, so continued to work at it.
+* I was unfortunately not able to achieve all the models I wanted, having spent more than two full days on user/session functionality.  But I felt this was the most important part of the project, and that the other models hinged on it, so continued to work at it.
+* I also really wanted to do a little javascript click event project where users can "cheer for" (like/favorite) a runner and little stars would pop up around her photo. 
+* I think I can use the Vimeo API so I can pull video directly from my partner (the "Miles & Trials" Documentarist) to a page on the site.  That will be really cool when I get there!
 
 ## unexpected gains
-* While working on the comment system, I learned a great deal of the information I missed about testing and managed to implement it pretty well.  I also was very confused about the lesson on static pages before I figured them out with this project.  I'm very pleased with the result, but at the same time I wish that I had more app functionality.
+* While working on the user/session system, I learned a great deal of the information I missed about testing and managed to implement it pretty well.  I also was very confused about the lesson on static pages before I figured them out with this project.  I'm very pleased with the result, but at the same time I wish that I had more cool features.
 * Planning was an amazing process this time around. I feel like I began coding with clear direction and a goal in mind, but could begin at the beginning, so to speak.
 
 ###resources: 
@@ -24,3 +26,7 @@ I was unfortunately not able to achieve full user functionality, having spent mo
 * https://www.youtube.com/watch?v=X3VZ6OgQmwM&feature=youtu.be - on the advice of a classmate I followed this as my first attempt at user logins, but it led me down a path of many error messages. Thinking it was my own error, I began it again from scratch, only to have the same problems.
 * https://www.railstutorial.org/book/  - was crucial in helping me learn about testing and helping me make it to user login functionality.
 * http://guides.rubyonrails.org/ - The rails guides were great when I was trying to figure out forms, combat weird error messages, populate data and about a thousand other things.
+
+
+## Conclusion:
+To be continued! This project is the very nascent version of a site I plan to take live, so I plan to keep working on my unsolved problems.  My sister (the boss) is coming up with feedback already, so I'm sure there will be lots more to do as well!
