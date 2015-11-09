@@ -1,3 +1,4 @@
+<div class="form">
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -19,7 +20,16 @@
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation, "Confirmation" %><br>
+    <%= f.password_field :password_confirmation %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+</div>

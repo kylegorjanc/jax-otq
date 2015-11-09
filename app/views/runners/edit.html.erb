@@ -1,6 +1,8 @@
 
 	<h3>Edit Runner Info</h3>
 	<%= render partial: 'form' %>
-	<br>	
+	<br>
+	<div class="form">	
 	<h3 class="warning" id="delete">WARNING: DELETING A RUNNER CANNOT BE UNDONE.</h2>
 	<button class="delete"><%= link_to "DELETE #{@runner.first_name} #{@runner.last_name}", runner_path(@runner), method: :delete, data: {confirm: "Are you sure you want to delete #{@runner.first_name} #{@runner.last_name}?"} %></button>
+	</div>
