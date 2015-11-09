@@ -9,7 +9,11 @@
 	      <%= f.email_field :email, class: 'form-control' %><br>
 <br>
 	      <%= f.label :password %><br>
-	      <%= f.password_field :password, class: 'form-control' %><br>
+	      <%= f.password_field :password, class: 'form-control' %><br><br>
+	            <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span>Remember me</span><br>
+      <% end %>
 <br>
 	      <%= f.submit "Log in", class: "btn btn-primary" %>
 	    <% end %>
