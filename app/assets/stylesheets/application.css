@@ -210,6 +210,13 @@ button.delete > a {
 	color: rgba(0,0,0,1);
 }
 
+#error_explanation h2{
+	color: #fb8a03;
+	font-size: 1.5em;
+}
+#error_explanation ul{
+	font-weight: bold;
+}
 
 /*************************************************
 Front Page View
