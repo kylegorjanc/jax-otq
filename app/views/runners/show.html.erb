@@ -4,7 +4,8 @@
 	</div>
 
 	<div class="main" id="runner-info">
-		<img id="profile-pic"src="<%= @runner.img_url%>" alt= "<%= "#{@runner.first_name} #{@runner.last_name}" %>">
+	<div class="profile-box">
+		<img id="profile-pic"src="<%= @runner.img_url%>" alt= "<%= "#{@runner.first_name} #{@runner.last_name}" %>"></div>
 		<div class="bio">
 			<h3><% if @runner.is_qualified %>
 			 	Qualified with a <%= @runner.q_standard %> standard!

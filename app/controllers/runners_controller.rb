@@ -40,7 +40,7 @@ class RunnersController < ApplicationController
   private
 
   def runner_params
-    params.require(:runner).permit(:first_name, :last_name, :age, :img_url, :bio, :profession, :website, :has_coach, :coach_name, :twitter_handle, :has_spouse, :has_chidren, :num_of_children, :is_qualified, :q_standard, :marathon_pr, :first_marathon_time, :avg_job_hrs, :peak_mileage_weekly)
+    params.require(:runner).permit(:first_name, :last_name, :age, :img_url, :bio, :profession, :website, :has_coach, :coach_name, :twitter_handle, :has_spouse, :has_chidren, :num_of_children, :is_qualified, :q_standard, :marathon_pr, :first_marathon_time, :avg_job_hrs, :peak_mileage_wkly)
   end
 	
 end

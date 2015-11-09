@@ -346,9 +346,18 @@ Runners View
 }
 
 /*runner show page only*/
-#profile-pic {
+.profile-box {
 	float:left;
+	width: 320px;
+	height: 320px;
+	text-align: center;
 	padding: 1em;
+}
+
+#profile-pic {
+	position: static;
+	width: 100% !important;	
+	height: 100% !important;
 }
 
 /*runner show page */
