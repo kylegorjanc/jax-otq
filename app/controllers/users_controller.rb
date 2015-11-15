@@ -27,17 +27,11 @@ class UsersController < ApplicationController
   # POST /users
   def create
     @user = User.new(user_params)
-
-    respond_to do |format|
-      if @user.save
-         log_in @user
-        format.html { redirect_to root_path }
-        format.json { render :show, status: :created, location: @user }
-        flash[:success] = "Sign-up successful. Please log in."
-      else
-        format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+    if @user.save
+      redirect_to login_path
+      flash[:success] = "Sign-up successful. Please log in."
+    else
+      render 'new'
     end
   end
 

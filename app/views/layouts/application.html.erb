@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The OTQ Project</title>
+  <title>The Salty Trials Project</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -17,6 +17,7 @@
               <li><%= link_to "Settings", edit_user_path(current_user) %></li>
               <li><%= link_to "Log out", logout_path, method: "delete" %></li>
             <% else %>
+            	<%= link_to "Sign up", signup_path %>
             	<li><%= link_to "Login", '/sessions/new' %></li>
             <% end %>
 		
@@ -25,10 +26,13 @@
 </div> 
 <div id="header" class="container">
 	<div id="logo">
-		<h1 class="logo"><a href="#">The OTQ Project</a></h1>
+		<h1 class="logo"><a href="#">The Salty Trials Project</a></h1>
 		</div>
 	</div>
 	<div class="container" id="page">
+	 <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
 		<%= yield %>
 	</div>
 
@@ -36,8 +40,9 @@
 	<div id="copyright" class="container">
 		<p>&copy; SaltyRunning. All rights reserved. | Media courtesy of <a href="http://milesandtrialsfilm.blogspot.com/">Miles & Trials</a> | Design by <a href="http://saltyrunning.com" rel="nofollow">Cinnamedia</a></p>
 	</div>
-
+	<%= debug(params) if Rails.env.development? %>
 </div>
+
 
 </body>
 </html>

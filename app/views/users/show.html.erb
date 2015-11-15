@@ -1,17 +1,20 @@
 
 
 <% provide(:title, @user.name) %>
-<h1><%= @user.name %></h1>
- <%= gravatar_for @user %><br>
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-<br>
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-<br>
-<a href="/users/<% @user.id %>"><button>Edit</button></a>
-<a href="<%= root_path %>"><button>Home</button></a>
+<div class="row">
+	 <%= gravatar_for @user %>
+	<h1><%= @user.name %></h1>
+	<br>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @user.name %>
+	</p>
+	<br>
+	<p>
+	  <strong>Email:</strong>
+	  <%= @user.email %>
+	</p>
+	<br>
+	<a href="/users/<% @user.id %>"><button>Edit</button></a>
+	<a href="<%= root_path %>"><button>Home</button></a>
+</div>

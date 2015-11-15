@@ -109,12 +109,6 @@ h2.categories {
 	text-align: center;
 }
 
-p, ol, ul {
-	margin-top: 0;
-	display: inline;
-
-}
-
 
 p {
 	position: relative;
@@ -230,7 +224,12 @@ button.delete > a {
 
 #error_explanation {
 	color: #fb8a03;
-	font-size: 1.5em;
+	font-size: .75em;
+	text-align: left;
+}
+#error_explanation > h1, h2, h3, h4 {
+	color: #fb8a03;
+	font-size: 1em;
 }
 #error_explanation ul{
 	font-weight: bold;

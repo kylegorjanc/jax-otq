@@ -10,21 +10,22 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                password:              "foo",
                                password_confirmation: "bar" }
     end
-  assert_template 'users/new'
+    assert_template 'users/new'
   end
 
-    test "valid signup information" do
+  test "valid signup information" do
     get signup_path
-    end
-
     assert_difference 'User.count', 1 do
       post_via_redirect users_path, user: { name:  "Example User",
                                             email: "user@example.com",
                                             password:              "password",
                                             password_confirmation: "password" }
     end
- 
-   test "login with valid information followed by logout" do
+    assert_template 'users/show'
+  end
+end
+
+  test "login with valid information followed by logout" do
     get login_path
     post login_path, session: { email: @user.email, password: 'password' }
     assert is_logged_in?
@@ -42,6 +43,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", logout_path,      count: 0
     assert_select "a[href=?]", user_path(@user), count: 0
 
- 
-    end
+
   end
+end

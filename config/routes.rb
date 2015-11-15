@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   get 'about' => 'static_pages#about'
 
+  get 'signup' => 'users#new'
+
+  get 'login' => 'sessions#new'
+
   get 'welcome/index'
 
   root 'static_pages#home'

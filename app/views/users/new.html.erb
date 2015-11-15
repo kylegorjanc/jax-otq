@@ -1,5 +1,7 @@
-<h1 class="form">New User</h1>
-
+<h1 class="form">Sign up</h1>
+<br>
 <%= render 'form' %>
+<br>
+<div class="form"><small>Current user?  <%= link_to "Login", login_path %></small></div>
 
 <%= link_to 'Back', users_path %>
