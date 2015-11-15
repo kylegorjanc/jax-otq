@@ -2,6 +2,6 @@
 # FixtureSet.html
 
 michael:
-  name: Michael Example
-  email: michael@example.com
+  name: yes3
+  email: yes@yes.com
   password_digest: <%= User.digest('password') %>

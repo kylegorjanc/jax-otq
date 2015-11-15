@@ -9,6 +9,7 @@
 	right: 0;
 	width: 100%;
 	padding: .2em;
+	font-size: 12pt;
 }
 
 #navbar ul {
@@ -56,10 +57,10 @@
 
 #logo {
 	position: absolute;
+	text-align: center;
+	margin: 0 auto;
 	top: -0.5em;
-	left: auto;
-	right: auto;
-	font-size: 2em;
+	font-size: 30pt;
 }
 
 #logo a {
@@ -153,14 +154,14 @@ a:hover {
 
 button {
 	display: inline-block;
-	margin-top: 2em;
-	padding: .6em 1.2em .6em 1.2em;
+	margin: 1em auto;
+	padding: .6em 1em .6em 1em;
 	background: #8dc63f;
 	letter-spacing: 0.20em;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 400;
-	font-size: 0.90em;
+	font-size: 12pt;
 	color: #ffffff;
 }
 

@@ -21,9 +21,9 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                             password:              "password",
                                             password_confirmation: "password" }
     end
-    assert_template 'users/show'
+    assert_template 'sessions/new'
   end
-end
+
 
   test "login with valid information followed by logout" do
     get login_path
